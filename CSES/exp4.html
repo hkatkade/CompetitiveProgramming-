@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html>
+    <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        form {text-align: center;}
+    </style>
+
+   <head>
+    <script>
+        
+        $(document).ready(function(){
+            $('#fname').hide();
+            $('#lname').hide();
+            $('#bday').hide();
+            $('#cno').hide();
+
+            var fname_err=true;
+            var lname_err=true;
+            var bday_err=true;
+            var cno_err=true;
+
+            $('#fname').keyup(function(){
+                fname_check();
+            });
+
+            function fname_check(){
+                var f_var=$('#fname').val();
+                if(f_var.length==''){
+                    $('#fname').show();
+                    $('#fname').html("**please fill the first name");
+                    $('$fname').focus();
+                    $('$fname').css("color","red");
+                    fname_err=false;
+                    return false;
+                }
+                else{
+                    $('#fname').hide();
+
+                }
+            }
+        });
+
+    </script>
+     <h1>Student Registration form</h1>
+   </head>
+	
+   <body>
+      <form name="myForm" onsubmit="return validateForm()" method="post">
+        First name: <input type = "text" name = "first_name" />
+        <h5 id="fname"> </h5>
+        <br>
+        <br>
+        Last name: <input type = "text" name = "last_name" />
+        <h5 id="lname"> </h5>
+        <br>
+        <br>
+        Contact No.: <input type = "text" name = "contact_name" />
+        <h5 id="cno"> </h5>
+        <br>
+        <br>
+        <label for="birthday">Date of Birth:</label>
+        <input type="date" id="birthday" name="birthday">
+        <h5 id="bday"> </h5>
+        <br>
+        <br>
+        MH-CET Score: <input type = "text" name = "mhcet" />
+        <br>
+        <br>
+        <h3>Branches Intrested in to join : </h3>
+        <input type="checkbox" id="1" name="1" value="B">
+        <label for="vehicle1"> Computer </label><br>
+        <input type="checkbox" id="2" name="2" value="C">
+        <label for="vehicle2"> IT</label><br>
+        <input type="checkbox" id="3" name="3" value="v">
+        <label for="vehicle3"> EXTC</label><br>
+        <input type="checkbox" id="4" name="4" value="A">
+        <label for="vehicle3"> ETRX </label><br>
+        <br>
+        <br>
+        <h3>Are you NRI?</h3>>
+        <INPUT type="radio" name="YES" value="M"> YES<BR>
+        <INPUT type="radio" name="NO" value="F"> NO<BR>
+        <br>
+        <br>
+        <label for="myfile">Upload your MH-CET marksheet:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <label for="c">Select your 12th board:</label>
+        <select id="c" name="ca">
+        <option value="cb">CBSE</option>
+        <option value="hs">HSC</option>
+        <option value="ic">ICSE</option>
+        <option value="oth">Others</option>
+        <br>
+        <br>
+        <textarea rows="4" cols="50" name="comment" form="usrform">
+            Any further questions?</textarea>   
+        <input type="submit" value="Submit">
+        </select>
+      </form>
+   </body>
+	
+</html>
