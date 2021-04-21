@@ -41,23 +41,28 @@ int main()
             c[i][j] = (c[i - 1][j] + c[i - 1][j - 1]) % MOD;
         }
     }
-    w(t){
+    //w(t)
+    {
         ll m, n;
         cin >> n >> m;
-        for (ll i = 1; i<=n;i++){
+        for (ll i = 1; i<=m;i++){
             cin >> a[i];
         }
+        cin>>n>>m
+        
         sort(a+1, a+m+1);
         ll sum = 1;
         ll d = n-m;
         for(int i = 1; i <= m; i++)
         {
             sum = (sum * c[d][a[i] - a[i - 1] - 1]) % MOD;
+            //cout << "harsh: " << a[i] - a[i - 1] - 1 << endl;
             d -= a[i] - a[i - 1] - 1;
         }
         for(int i = 2; i <= m; i++)
         {
             sum = (sum * pows[a[i] - a[i - 1] - 1]) % MOD;
+            //cout << "aastha: " << pows[a[i] - a[i - 1] - 1] << endl;
         }
         cout << sum << "\n";
     }
