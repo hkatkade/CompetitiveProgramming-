@@ -48,8 +48,6 @@ int main()
         for (ll i = 1; i<=m;i++){
             cin >> a[i];
         }
-        cin>>n>>m
-        
         sort(a+1, a+m+1);
         ll sum = 1;
         ll d = n-m;
