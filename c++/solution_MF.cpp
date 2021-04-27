@@ -8,7 +8,7 @@ void hk(){
 #endif
 }
 int main(){
-    hk();
+    //hk();
     ll t;
     cin >> t;
     while(t--){
