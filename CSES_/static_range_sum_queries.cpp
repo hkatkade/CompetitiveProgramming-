@@ -29,21 +29,18 @@ ll seive(ll n){
 int main()
 {
     fastIO;
-    ll n;
-    cin >> n;
-    vector<ll> c(n,0);
-    for (ll i = 0; i < n;i++){
-        cin >> c[i];
+    ll n, q, x, sum = 0;
+    cin >> n >> q;
+    vector<ll> a(n+1, 0);
+    for (ll i = 1; i <=n;i++){
+        cin >> x;
+        sum += x;
+        a[i] = sum;
     }
-    ll sum = accumulate(c.begin(), c.end(), 0);
-    vector<ll> dp(sum + 1, 0);
-    dp[0] = 1;
-    for (ll i = 1; i <= sum;i++){
-        for (ll j = 0; j < n;j++){
-            if(i-c[j]>=0){
-                 
-            }
-        }
+    ll l, r;
+    for (ll i = 0; i < q;i++){
+        cin >> l >> r;
+        cout << (a[r] - a[l - 1]) << endl;
     }
     return 0;
 }
