@@ -11,8 +11,8 @@ int dy[] = {0, 1, 0, -1};
 ll a[M], pows[M], c[M][M];
 void hk(){
 #ifndef ONLINE_JUDGE
-    freopen("input49.txt", "r", stdin);
-    freopen("output49.txt", "w", stdout);
+    freopen("i.txt", "r", stdin);
+    freopen("o.txt", "w", stdout);
 #endif  
 }
 ll power(ll x, ll y)
