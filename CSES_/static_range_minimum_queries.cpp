@@ -9,8 +9,8 @@ using namespace std;
 vector<ll> seg(1000000, 0);
 void hk(){
 #ifndef ONLINE_JUDGE
-    freopen("i.txt", "r", stdin);
-    freopen("o.txt", "w", stdout);
+    freopen("i8.txt", "r", stdin);
+    freopen("o8.txt", "w", stdout);
 #endif  
 }
 ll seive(ll n){
