@@ -1,2 +1,4 @@
-    string name;
-    
+public:
+    //     void introduce(){
+    //         cout << "Hey from farmer\n";
+    //     }
