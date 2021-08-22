@@ -54,7 +54,8 @@ ll min_query(vector<ll> a,vector<ll> tree, ll start,ll end, ll l,ll r,ll ind ){
     ll mid = (start + end) / 2;
     return min(min_query(a, tree, start, mid, l, r, 2 * ind), min_query(a, tree, mid + 1, end, l, r, 2 * ind + 1));
 }
-void buildTree(vector<ll>& a,vector<ll>& tree,ll start,ll end,ll ind){
+void buildTree(vector<ll>& a,vector<ll>& 
+,ll start,ll end,ll ind){
     if(start==end){
         tree[ind] = a[start];
         return;

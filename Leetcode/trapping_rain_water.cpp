@@ -21,7 +21,7 @@ int solution(vector<int>& h){
         right[i] = max(right[i + 1], h[i]);
     }
     int ans = 0;
-    for (i = 0; i < n;i++){
+    for (int i = 0; i < n;i++){
         ans += min(left[i], right[i]) - h[i];
     }
     return ans;
