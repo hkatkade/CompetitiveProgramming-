@@ -57,9 +57,3 @@ int main(){
     }
     return 0;  
 }
-• Writing Quantitative trading algorithms and back-testing to generate alpha
-• Extracting, analyzing and interpreting a variety of data
-• Analyse large financial data sets to identify trading opportunities
-• Design, back-testing and implementation of strategies
-• A dedicated Python expert for proprietary/discretionary traders enrolled in firm’s exclusive Quantitative trading
-program.
