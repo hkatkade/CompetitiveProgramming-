@@ -23,8 +23,8 @@ class Complex{
 
 int main(){
 
-    Complex c1(10, 5), c2(8, 7);
-    Complex c3 = c1 + c2;
+    Complex c1(10, 5), c2(8, 7),c4(1,1);
+    Complex c3 = c1 + c2 + c4;
     c3.display();
     return 0;
 }

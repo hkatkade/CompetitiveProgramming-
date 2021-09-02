@@ -1,20 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class person{
+class A{
+    private:
+        void* operator new(size_t sz){
+        
+        }
     public:
-        void walk(int steps=7){
-            cout << "walking " << steps << endl;
-        }
-        void walk(int steps){
-            cout << "walking " << steps << endl;
-        }
+        static int x;
+
 };
+
+int A::x = 0;
+
 int main(){
 
-    person harsh;
-    // harsh.walk();
-    harsh.walk(5);
+    A *ptr = new A;
+    cout << A::x << endl;
     return 0;
-
 }
