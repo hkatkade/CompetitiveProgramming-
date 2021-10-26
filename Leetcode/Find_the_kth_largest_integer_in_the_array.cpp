@@ -9,7 +9,7 @@ public:
                         continue;
                     }
                     else{
-                        return x<y;
+                        return x < y;
                     }
                 }
             }
