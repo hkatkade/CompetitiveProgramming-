@@ -23,7 +23,7 @@ int main(){
         if(indeg[i]==0){
             q.push(i);
         }
-    }
+    } 
     vector<int> res;
     while(!q.empty()){
         c++;
