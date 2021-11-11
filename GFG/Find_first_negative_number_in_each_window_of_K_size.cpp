@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 vector<long long> printFirstNegativeInteger(long long int A[],
                                              long long int n, long long int k) {
     
