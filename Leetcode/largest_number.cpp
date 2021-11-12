@@ -13,3 +13,22 @@ public:
         return res[0] == '0' ? "0" : res;
     }
 };
+
+class Solution {
+public:
+    static bool comp(int& a,int& b){
+        string x=to_string(a);
+        string y=to_string(b);
+        return (x+y)>(y+x);
+    }
+    string largestNumber(vector<int>& a) {
+        int n=a.size();
+        sort(a.begin(),a.end(),comp);
+        string res="";
+        for(auto &i:a){
+            res+=to_string(i);
+        }
+        return res[0]=='0'?"0":res;
+    }
+};
+
