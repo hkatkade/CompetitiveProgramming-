@@ -21,7 +21,11 @@ class HumanBeing{
 };
 
 int main(){
+
     HumanBeing *harsh = new HumanBeing();
+    // Destructor called
     delete harsh;
+    // Destructor is not called 
+    // free(harsh);
     return 0;
 }

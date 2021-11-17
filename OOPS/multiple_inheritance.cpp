@@ -9,6 +9,9 @@ class Father{
         void askFather(){
             cout << "Ask your father\n";
         }
+        virtual void askMother(){
+            cout << "asdhkjkasdMother's name is \n";
+        }
 };
 class Mother{
     public:

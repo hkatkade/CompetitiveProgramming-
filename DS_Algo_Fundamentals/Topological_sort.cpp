@@ -7,7 +7,7 @@ void hk(){
     #endif
 }
 int main(){
-    hk();
+    // hk();
     int c = 0, n, m;
     cin >> n >> m;
     vector<vector<int>> g(n + 1);

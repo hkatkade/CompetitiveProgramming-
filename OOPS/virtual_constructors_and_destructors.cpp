@@ -19,7 +19,7 @@ class derived:public base{
             cout << "Derived class constructor\n";
         }
         ~derived(){
-            cout << "Derived class constructor\n";
+            cout << "Derived class destructor\n";
         }
 };
 int main(){

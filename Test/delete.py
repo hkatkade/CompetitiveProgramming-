@@ -1,6 +1,6 @@
 import os
 
-directory='D:\CompetitiveProgramming\Kickstart'
+directory='D:\CompetitiveProgramming\C++'
 
 files_in_directory = os.listdir(directory)
 filtered_files = [file for file in files_in_directory if file.endswith(".exe")]

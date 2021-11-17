@@ -24,7 +24,7 @@ class student : public person{
         ~student(){
             cout << "Destructor of student is called\n";
         }
-}
+};
 
 int main(){
 

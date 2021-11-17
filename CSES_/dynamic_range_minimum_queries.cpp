@@ -7,12 +7,6 @@
 #define sort(a) sort(a.begin(), a.end());
 using namespace std;
 vector<ll> seg(1000000, 0);
-void hk(){
-#ifndef ONLINE_JUDGE
-    freopen("i.txt", "r", stdin);
-    freopen("o.txt", "w", stdout);
-#endif  
-}
 ll build_min(vector<ll> &a,  vector<ll> &tree, ll start, ll end, ll ind)
 {
     if(start==end){

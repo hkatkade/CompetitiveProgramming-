@@ -6,7 +6,7 @@ using namespace std;
 
 class person{
     public:
-        void introduce(){
+        virtual void introduce(){
             cout << "Hi I am a person " << endl;
         }
 };

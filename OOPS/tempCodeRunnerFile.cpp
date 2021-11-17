@@ -1,4 +1,2 @@
-public:
-    //     void introduce(){
-    //         cout << "Hey from farmer\n";
-    //     }
+HumanBeing *harsh = new HumanBeing();
+    

@@ -7,32 +7,7 @@
 #define sort(a) sort(a.begin(), a.end());
 using namespace std;
 vector<ll> seg(1000000, 0);
-void hk(){
-#ifndef ONLINE_JUDGE
-    freopen("i8.txt", "r", stdin);
-    freopen("o8.txt", "w", stdout);
-#endif  
-}
-ll seive(ll n){
-    set<ll> s;
-    bool a[n + 1];
-    memset(a, true, sizeof(a));
-    a[0] = false;
-    a[1] = false;
-    for (ll i = 2; i * i <= n;i++){
-        if(a[i]==true){
-            for (ll j = i * i; j <= n;j+=i){
-                a[j] = false;
-            }
-        }
-    }
-    for (ll i = 0; i <= n;i++){
-        if(a[i]==true){
-            s.insert(i);
-        }
-    }
-    return s.size();
-};
+
 ll build(vector<ll> &a, vector<ll> &tree, ll start, ll end, ll ind)
 {
     if(start==end){
