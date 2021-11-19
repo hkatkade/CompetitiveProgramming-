@@ -1,6 +1,6 @@
 import os
 
-directory='D:\CompetitiveProgramming\'
+directory='D:\CompetitiveProgramming\DS_Algo_Fundamentals'
 
 files_in_directory = os.listdir(directory)
 filtered_files = [file for file in files_in_directory if file.endswith(".exe")]
