@@ -35,7 +35,7 @@ int main(){
     int timer = 0;
     for (int i = 0; i < n;i++){
         if(vis[i]==0){
-            dfs(1, -1, vis, tin, low, timer, g);
+            dfs(i, -1, vis, tin, low, timer, g);
         }
     }
     return 0;
