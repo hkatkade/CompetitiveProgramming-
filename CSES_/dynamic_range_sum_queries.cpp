@@ -47,6 +47,7 @@ int main()
     cin >> n >> q;
     vector<ll> tree(2 * n + 2, 0);
     vector<ll> a(n+1, 0);
+
     for (ll i = 0; i <n;i++){
         cin >> a[i];
     }
