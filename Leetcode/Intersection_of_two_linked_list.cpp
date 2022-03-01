@@ -3,7 +3,6 @@ public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         unordered_set<ListNode*> a,b;
         while(headA!=NULL || headB!=NULL){
-            cout<<"safasdas";
             if(headA){
                 if(b.find(headA)!=b.end()){
                     return headA;

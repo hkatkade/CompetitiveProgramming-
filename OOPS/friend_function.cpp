@@ -20,7 +20,8 @@ class HumanBeing{
     // declaring a friend function
     friend void display(HumanBeing man);
     // another friend class to this class
-    // All member functions of that class can access the private and protected members of the class it is friend of
+    // All member functions of that class can access the private and protected 
+    // members of the class it is friend of
     friend class dog;
 };
 class dog{
@@ -44,5 +45,6 @@ int main(){
     HumanBeing harsh("Harsh",21);
     dog lab;
     lab.dogfriend(harsh);
+    display(harsh);
     return 0;
 }

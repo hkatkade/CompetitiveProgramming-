@@ -7,8 +7,7 @@ using namespace std;
 
 // Virtual functions ensure that the correct function is called for an object,
 //  regardless of the type of reference (or pointer) used for function call.
-// Virtual functions ensure that the correct function is called for an object,
-//  regardless of the type of reference (or pointer) used for function call.
+
 
 // VTables are created for all the classes having atleast one virtual funtions
 class person{

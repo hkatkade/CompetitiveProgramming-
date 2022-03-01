@@ -9,7 +9,7 @@ class student{
             this->name = new string(name);
             this->age = val;
         }
-        // Copy constructor. It is called when a object is copied. eg.line 28
+        // Copy constructor. It is called when a object is copied. eg.line 29
         student(const student &s){
             cout << "Copy constructor is called\n";
             name = new string(*s.name);

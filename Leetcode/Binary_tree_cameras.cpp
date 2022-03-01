@@ -25,7 +25,6 @@ int minCameraCover(TreeNode* root) {
             return 0;
         }
         int ans = helper(root);
-        cout<<ans<<endl;
         if(ans==-1){
             cam++;
             return cam;

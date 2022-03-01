@@ -13,7 +13,7 @@ void hk(){
         freopen("../output.txt", "w", stdout);
     #endif
 }
- 
+
 int main(){
     fastIO;
     hk();
