@@ -7,7 +7,7 @@ public:
         TreeNode *l=lowestCommonAncestor(root->left,p,q);
         TreeNode *r=lowestCommonAncestor(root->right,p,q);
         if(!l){
-            return r;    
+            return r;     
         }
         else if(!r){
             return l;
